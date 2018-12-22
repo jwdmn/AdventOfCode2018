@@ -32,7 +32,7 @@ namespace Day1
 
     private static void PartTwo(IEnumerable<int> input)
     {
-      int currentFreq = 0;
+      int currentFrequency = 0;
       bool done = false;
       HashSet<int> hs = new HashSet<int>();
 
@@ -40,14 +40,14 @@ namespace Day1
       {
         foreach (int i in input)
         {
-          currentFreq += i;
-          if (!hs.Contains(currentFreq))
+          currentFrequency += i;
+          if (!hs.Contains(currentFrequency))
           {
-            hs.Add(currentFreq);
+            hs.Add(currentFrequency);
           }
           else
           {
-            Console.WriteLine($"Part two: {currentFreq}");
+            Console.WriteLine($"Part two: {currentFrequency}");
             done = true;
             break;
           }
